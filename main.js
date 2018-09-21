@@ -22,15 +22,13 @@ sortingButton.addEventListener('click', () => {
 
 
 const studentCardElem = () => {
-  //student's name:
  const muggleInput = document.getElementById('muggle').value;
- //student's houses by random:
   const whichHouse = houses[Math.floor(Math.random()*houses.length)];
     let newString = `<div class="card w-25 m-2">
     <div class="card-body">
         <h5 class="card-title">${muggleInput}</h5>
         <p class="card-text">${whichHouse}</p>
-        <button href="#" class="btn btn-danger expelButton">Expel</button>
+        <button href="#" id="expelButton" class="btn btn-danger expel">Expel</button>
     </div>
   </div>`;
 counter++;
@@ -52,9 +50,3 @@ letsStartElem.addEventListener('click', (event) => {
 })
 
 
-//   // function showForm () {
-//   //   document.getElementById('submit').style.display="block";
-//   // };
-// const studentCardElem = document.getElementById('');
-// studentCardElem.addEventListener('click', () => {
-//   const studentName = document.getElementById('muggle').value;
