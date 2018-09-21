@@ -1,8 +1,14 @@
 
 const printToDom = (stringToPrint, whereToPrint) => {
   document.getElementById(whereToPrint).innerHTML = stringToPrint;
-}
+};
 
+const houses = [
+  'Hufflepuff',
+  'Ravenclaw',
+  'Gryffindor',
+  'Slytherin'
+];
 
 const sortingButton = document.getElementById("letsStartBtn");
 
@@ -26,9 +32,23 @@ sortingButton2.addEventListener('click', () => {
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>`;
+  if (stendt-name === houses[0]) {
+
+  }
 printToDom(domString, 'sortingCardBegin');
 });
 
+// let outputHouse = '';
+// const houseDecider = (whichHouse) => {
+//   outputHouse = ' ';
+//   let inputHouse = document.getElementById('sortingCardBegin').value.toLowerCase();
+//   for (let i = 0; i <inputHouse.length; i++) {
+//     outputHouse += `${houses[inputHouses[i]]}`;
+//     if (houses === inputHouses[i]) {
+//       printToDom(domString, 'sortingCardBegin');
+//     }
+//   }
+// }
 
 // /* <img class="card-img-top" src=".../100px180/" alt="Card image cap"> */
 
@@ -41,3 +61,7 @@ printToDom(domString, 'sortingCardBegin');
 
 
 
+sortingButton2 = Math.floor(Math.random()*4);
+  if (sortingButton2 === [0]) {
+    printToDom(houses, 'sortingCardBegin');
+  }
