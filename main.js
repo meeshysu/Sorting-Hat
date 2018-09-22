@@ -28,12 +28,12 @@ const studentCardElemBuilder = () => {
     <div class="card-body">
         <h5 class="card-title">${muggleInput}</h5>
         <p class="card-text">${whichHouse}</p>
-        <button id="expelButton" class="btn btn-danger expel">Expel</button>
+        <button id="expel" class="btn btn-danger expelButton">Expel</button>
     </div>
   </div>`;
 counter++;
 printToDom(newString, 'card');
-// activateExpels();
+activateExpels();
 };
 
 const studentCardBody = () => {
@@ -62,6 +62,7 @@ letsStartElem.addEventListener('click', (event) => {
 //   })
 // }
 // }
+const activateExpels = () => {
 document.querySelector("body").addEventListener("click", function(event) {
     if (event.target.classList.contains('expelButton')) {
       const buttonIClicked = event.target;
@@ -69,3 +70,4 @@ document.querySelector("body").addEventListener("click", function(event) {
         cardToDelete.remove();
     }
   })
+}
