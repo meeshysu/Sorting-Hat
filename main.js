@@ -11,7 +11,7 @@ let counter = 0;
 const sortingButton = document.getElementById('letsStartBtn');
 sortingButton.addEventListener('click', () => {
   let newString =
-    `<div class="form-group">
+    `<div class="form-group m-2">
           <label for="studentsName">Enter Your Name Here:</label>
           <input type="text" class="form-control" id="muggle" placeholder="Student Name">
     </div>
