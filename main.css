@@ -4,6 +4,13 @@ body {
     background-repeat: no-repeat;
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 379px;
+    width: 800px;
+}
+
 .jumbotron {
     margin:30px;
     background-color: rgba(192, 192, 192, 0.637);
@@ -11,18 +18,18 @@ body {
 
 }
 
-#form {
-    margin:30px;
-    background-color: rgba(192, 192, 192, 0.637);
-    opacity: 1%;
-}
-
 #sortinghat {
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
     display: inline;
     align-self: center;
+}
 
+#expel {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #muggle {
@@ -36,9 +43,21 @@ label {
     padding: 10px;
 }
 
+#thisWorks {
+    display: flex;
+    flex-direction: row;
+    margin-left: 290px;
+}
+ 
 #imTired {
-    display: inline-block;
-    justify-content: space-between;
+    display: block;
+    width: 300px;
+    margin-left: 240px;
+    background-color: rgba(192, 192, 192, 0.637);
+    opacity: 1%;
+    border-radius: 4%;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .card {
@@ -46,4 +65,32 @@ label {
     background-color: rgba(192, 192, 192, 0.637);
     opacity: 1%;
     justify-content: center;
+}
+
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    display: inline;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.card-title {
+    text-align: center;
 }
